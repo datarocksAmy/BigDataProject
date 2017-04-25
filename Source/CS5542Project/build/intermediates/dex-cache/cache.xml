@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\.gradle\caches\modules-2\files-2.1\com.clarifai.clarifai-api2\core\2.0.2\2f2018aa773ec96511ed1570e9604c81eaca9076\core-2.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2f2018aa773ec96511ed1570e9604c81eaca9076">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\core-2.0.2_2a2532f65d1d08fbecf66a41048fc6d0638a6c22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.1_f3b20b0ff6ce0d70a88055f26c7f7009e5b56b24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.8.0_d422691b64948716de9dc6b343e22d3ede5775ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.8.0_3ceee96f2f50db791bfd83bcf88e0e3a5b79bb58.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.1_66b502860c46969ac3c7b6c0588be4b05172fb90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.1.1_0b37894f0cf1be7dd18e056cae3d6def767f9e2d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\gson-2.7_3ad0c40d8205c38877132adcbda60d9bf363e2ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.1_b7ec60993ba56f253bbe77c83fe25222c3285ba3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.4.1\c7c4f9e35c2fd5900da24f9872e3971801f08ce0\okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\okhttp-3.4.1_9606465b61f7c36e9bcc4b8be803023710125109.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.8.0_95bf32dc28992e566812396e90f5ed02cdccdcac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.1_536db84eef18588a38d2e87b7a27682427ae53fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.9.0\f824591a0016efbaeddb8300bee54832a1398cfa\okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\okio-1.9.0_f67bd806ae9a947fe86aca26d73f28bc194ff07e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.1.1_6729902c77136ec9c01906f8ed976f6555ddc42d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.1.1_92c03866418c7b8aa4e6f640f43cb33e3779ab05.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.1_4e56305f839997fab52f0edb7d61f1bdc776b6f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.1_32d71fe643838e09b9921d70aafca427fe7141cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.1_30299147b558fa90a2c36e7bd18b96149519a3f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.1_30185769030ead9b64eea5f8171c0a51448ad9da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.1_b67dfad4b373c2b2a3fdac15c1d978835062ed16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.1_9a6bc2d519c2e973a560fbe49a5de55051037209.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e3234cd25e23069abd48ecd2117bc0e8011bf45a">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-9.8.0_320a2896af47fae7210a16d96bd67801f44804a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.8.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="C:\Users\Anonymous\Documents\CS5542\BigDataProject\Source\CS5542Project\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.8.0_10fb809e1dfefa3537ae82fd6b09f671544e99a6.jar" />
+    </item>
+
+</items>

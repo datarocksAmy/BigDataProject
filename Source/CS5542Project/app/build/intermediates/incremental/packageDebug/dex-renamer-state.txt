@@ -1,0 +1,4 @@
+#Tue Mar 21 12:40:21 CDT 2017
+base.0=C\:\\Users\\Anonymous\\Documents\\CS5542\\BigDataProject\\Source\\CS5542Project\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\Anonymous\\Documents\\CS5542\\BigDataProject\\Source\\CS5542Project\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

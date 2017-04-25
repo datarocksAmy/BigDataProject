@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="0.39"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ImageView
+        android:layout_width="500dp"
+        android:layout_height="400dp"
+        app:srcCompat="@drawable/nichols"
+        android:id="@+id/image_to_analyze"
+        android:layout_weight="0.39"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp" />
+
+    <Button
+        android:text="TAKE PHOTO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_to_photo"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="onClickPhoto"
+        android:layout_marginBottom="307dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="TensorFlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_tensor"
+        android:layout_above="@+id/text_output"
+        android:layout_alignEnd="@+id/image_to_analyze" />
+
+    <Button
+        android:text="CLARIFAI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_clarifai"
+        android:onClick="onClickClarifai"
+        android:layout_alignBaseline="@+id/brn_spark"
+        android:layout_alignBottom="@+id/brn_spark"
+        android:layout_alignStart="@+id/image_to_analyze" />
+
+    <Button
+        android:text="SPARK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/brn_spark"
+        android:onClick="onClickSpark"
+        android:layout_marginTop="76dp"
+        android:layout_alignTop="@+id/btn_to_photo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_output"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_below="@+id/btn_clarifai"
+        android:layout_marginTop="32dp"
+        android:layout_alignStart="@+id/btn_clarifai" />
+
+</RelativeLayout>
