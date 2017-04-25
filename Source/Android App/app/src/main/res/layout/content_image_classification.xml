@@ -36,7 +36,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_tensor"
         android:layout_above="@+id/text_output"
-        android:layout_alignEnd="@+id/image_to_analyze" />
+        android:layout_alignEnd="@+id/image_to_analyze"
+        android:onClick="onClickTensorFlow"/>
 
     <Button
         android:text="CLARIFAI"
