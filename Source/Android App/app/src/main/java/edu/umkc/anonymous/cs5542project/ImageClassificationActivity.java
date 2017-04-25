@@ -30,7 +30,16 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
+
 
 import clarifai2.api.ClarifaiBuilder;
 import clarifai2.api.ClarifaiClient;
@@ -43,6 +52,7 @@ import clarifai2.dto.prediction.Concept;
 
 import okhttp3.Call;
 import okhttp3.Callback;
+import okhttp3.FormBody;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
@@ -126,6 +136,113 @@ public class ImageClassificationActivity extends AppCompatActivity {
         Intent redirect = new Intent(ImageClassificationActivity.this, PhotoActivity.class);
         startActivity(redirect);
 
+    }
+
+    public void onClickTensorFlow(View v) {
+        String url = "http://192.168.1.160:5000/api/predict";
+        getResults(url);
+    }
+
+    public void getResults(String url) {
+        BitmapDrawable bitmapDrawable = ((BitmapDrawable) image.getDrawable());
+        Bitmap bitmap = bitmapDrawable.getBitmap();
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+        byte[] imageInByte = stream.toByteArray();
+        ByteArrayInputStream bis = new ByteArrayInputStream(imageInByte);
+
+        byte[] bytes;
+        byte[] buffer = new byte[8192];
+        int bytesRead;
+        ByteArrayOutputStream bytearrayoutputstream = new ByteArrayOutputStream();
+        try {
+            while ((bytesRead = bis.read(buffer)) != -1) {
+                bytearrayoutputstream.write(buffer, 0, bytesRead);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        bytes = bytearrayoutputstream.toByteArray();
+        String encodedString = Base64.encodeToString(bytes, Base64.DEFAULT);
+
+        OkHttpClient client = new OkHttpClient.Builder().retryOnConnectionFailure(true).build();
+        try {
+            //RequestBody requestBody = RequestBody.create(MediaType.parse("text/x-markdown"), encodedString);
+            RequestBody requestBody = new FormBody.Builder().add("imageBase64", encodedString).build();
+            Request request = new Request.Builder().url(url).post(requestBody).build();
+            client.newCall(request).enqueue(new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {
+                    System.out.println(e.getMessage());
+                }
+
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+                    final String result = response.body().string();
+                    String output = "";
+                    try {
+                        JSONObject jsonResult = new JSONObject(result);
+                        JSONArray array = jsonResult.getJSONArray("results");
+                        JSONObject results = array.getJSONObject(0);
+                        Map<String, String> resultMap = new HashMap<String, String>();
+                        Iterator<String> iter = results.keys();
+                        while (iter.hasNext()) {
+                            String key = iter.next();
+                            //output += key + " (" + results.getString(key) + ")\n";
+                            resultMap.put(key, results.getString(key));
+                        }
+                        Map<String, String> sortedMap = sortByValue(resultMap);
+                        for (Map.Entry<String, String> e : sortedMap.entrySet()) {
+                            String key = e.getKey();
+                            String value = e.getValue();
+                            output += key + " (" + value + ")\n";
+                        }
+                        System.out.println("!");
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
+                    Log.d("okHttp", result);
+                    Runnable r = new Runnable() {
+                        String out;
+                        @Override
+                        public void run() {
+                            outputTextView.setText(out);
+                        }
+                        public Runnable init(final String value) {
+                            this.out = value;
+                            return(this);
+                        }
+                    }.init(output);
+                    runOnUiThread(r);
+
+                }
+            });
+        } catch (Exception ex) {
+            outputTextView.setText(ex.getMessage());
+        }
+    }
+
+    public static <K, V extends Comparable<? super V>> Map<K, V>
+    sortByValue( Map<K, V> map )
+    {
+        List<Map.Entry<K, V>> list =
+                new LinkedList<>( map.entrySet() );
+        Collections.sort( list, new Comparator<Map.Entry<K, V>>()
+        {
+            @Override
+            public int compare( Map.Entry<K, V> o1, Map.Entry<K, V> o2 )
+            {
+                return ( o2.getValue() ).compareTo( o1.getValue() );
+            }
+        } );
+
+        Map<K, V> result = new LinkedHashMap<>();
+        for (Map.Entry<K, V> entry : list)
+        {
+            result.put( entry.getKey(), entry.getValue() );
+        }
+        return result;
     }
 
     public void onClickSpark(View v) {
