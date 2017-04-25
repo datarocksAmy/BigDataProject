@@ -2,6 +2,8 @@ import tensorflow as tf, sys
 from flask import Flask, jsonify, render_template, request
 from flask_cors import CORS, cross_origin
 import base64
+import json
+import operator
 
 app = Flask(__name__)
 
@@ -27,7 +29,7 @@ def predict():
                     #in tf.gfile.GFile("data/output_labels.txt")]
 
     # Unpersists graph from file
-    with tf.gfile.FastGFile("datasets/output_graph.pb", 'rb') as f:
+    with tf.gfile.FastGFile("output_graph.pb", 'rb') as f:
         graph_def = tf.GraphDef()
         graph_def.ParseFromString(f.read())
         _ = tf.import_graph_def(graph_def, name='')
@@ -41,15 +43,19 @@ def predict():
 
         # Sort to show labels of first prediction in order of confidence
         top_k = predictions[0].argsort()[-len(predictions[0]):][::-1]
-        output_string = []
+        #output_string = []
         output_score = []
+        output_dict = {}
         for node_id in top_k:
             human_string = label_lines[node_id]
             score = predictions[0][node_id]
-            output_string.append(human_string)
+            score_string = '%f' % (score)
+            #output_string.append(human_string)
+            output_dict[human_string] = score_string
             output_score.append(score)
             print('%s (score = %.5f)' % (human_string, score))
-    return jsonify(results=[output_string])
+    return jsonify(results=[output_dict])
+   
 
 if (__name__) == "__main__":
     app.run(host='0.0.0.0', threaded=True)
