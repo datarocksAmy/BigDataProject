@@ -29,6 +29,9 @@ Three different approaches are applied to this project - Clarafai API, Spark, Te
 ## Project Report 3
 >  Documentation of report 3 is <a href=""> here. </a>
 
+>Wiki links to screenshots ->
+<a href="https://github.com/datarocksAmy/BigDataProject/wiki/Iteration-3">Iteration 3</a>
+
 
 ## Code Source:
 > <a href="https://github.com/datarocksAmy/BigDataProject/tree/master/Source"> Main Source</a>
